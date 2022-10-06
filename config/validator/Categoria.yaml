@@ -1,0 +1,5 @@
+App\Entity\Categorias:
+  properties:
+    categoria:
+      - NotBlank:
+          message: 'Debe indicar un nombre de categoria'
