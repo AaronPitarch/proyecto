@@ -33,7 +33,7 @@ class Direccion
     private $puerta_piso_escalera;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=255)
      */
     private $cod_postal;
 
@@ -44,13 +44,13 @@ class Direccion
     private $cliente;
 
     /**
-     * @ORM\OneToOne(targetEntity=Provincias::class, cascade={"persist", "remove"})
+     * @ORM\ManyToOne(targetEntity=Provincias::class)
      * @ORM\JoinColumn(nullable=false)
      */
     private $provincia;
 
     /**
-     * @ORM\OneToOne(targetEntity=Municipios::class, cascade={"persist", "remove"})
+     * @ORM\ManyToOne(targetEntity=Municipios::class)
      * @ORM\JoinColumn(nullable=false)
      */
     private $municipio;

@@ -1,0 +1,9 @@
+#OJO!! no se ponen las variables que hacen referencia a las relaciones y no es obligatorio poner todas las variables
+App\Entity\Direccion:
+  properties:
+    calle:
+      - NotBlank:
+    cod_postal:
+      - NotBlank:
+    numero:
+      - NotBlank:
